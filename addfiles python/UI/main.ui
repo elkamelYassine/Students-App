@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1278</width>
+    <height>756</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1280</width>
+      <height>720</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget#widget{
+background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:0.893, y2:0, stop:0 rgba(92, 37, 141, 255), stop:1 rgba(67, 137, 162, 255))
+ }</string>
+    </property>
+    <widget class="QLabel" name="Createdby">
+     <property name="geometry">
+      <rect>
+       <x>1110</x>
+       <y>680</y>
+       <width>251</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:rgb(255, 255, 255)</string>
+     </property>
+     <property name="text">
+      <string>© Created By EL Kamel Yassine</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="IconEtudiant">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>110</y>
+       <width>101</width>
+       <height>101</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/newPrefix/etudiant.png&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="IconNote">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>410</y>
+       <width>101</width>
+       <height>111</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/newPrefix/183338.png&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="IconMatiere">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>260</y>
+       <width>91</width>
+       <height>91</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/newPrefix/livre.png&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ButtonAffichageEtudiants">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>110</y>
+       <width>731</width>
+       <height>91</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>MS Shell Dlg 2</family>
+       <pointsize>14</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="whatsThis">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 14pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(255, 255, 255);
+</string>
+     </property>
+     <property name="text">
+      <string>Afficher tous les Etudiants</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="AffichageMatiere">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>250</y>
+       <width>731</width>
+       <height>101</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 14pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(255, 255, 255);
+</string>
+     </property>
+     <property name="text">
+      <string>Afficher tous les Matieres</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="AffichageNotes">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>400</y>
+       <width>711</width>
+       <height>101</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 14pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(255, 255, 255);
+</string>
+     </property>
+     <property name="text">
+      <string>Afficher tous les Notes</string>
+     </property>
+     <property name="autoDefault">
+      <bool>false</bool>
+     </property>
+     <property name="default">
+      <bool>false</bool>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1278</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menufile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <widget class="QMenu" name="menuEnregistrer">
+     <property name="title">
+      <string>Enregistrer</string>
+     </property>
+     <addaction name="actionEtudiant"/>
+     <addaction name="actionMatiere"/>
+     <addaction name="actionNote"/>
+    </widget>
+    <widget class="QMenu" name="menuRecuperer">
+     <property name="title">
+      <string>Recuperer</string>
+     </property>
+     <addaction name="actionEtudiant_2"/>
+     <addaction name="actionMatiere_2"/>
+     <addaction name="actionNote_2"/>
+    </widget>
+    <addaction name="menuEnregistrer"/>
+    <addaction name="menuRecuperer"/>
+   </widget>
+   <widget class="QMenu" name="menuEtudiant">
+    <property name="title">
+     <string>Etudiant</string>
+    </property>
+    <widget class="QMenu" name="menuMise_a_jour">
+     <property name="title">
+      <string>Mise à jour </string>
+     </property>
+     <widget class="QMenu" name="menuSupprimer">
+      <property name="title">
+       <string>Supprimer</string>
+      </property>
+      <addaction name="actionSupprimer_un_etudiant"/>
+      <addaction name="actionSupprimer_par_section"/>
+      <addaction name="actionSuppression_des_tudiants_par_niveau"/>
+      <addaction name="actionSuppression_des_tudiants_par_section_et_niveau"/>
+     </widget>
+     <widget class="QMenu" name="menuModifier">
+      <property name="title">
+       <string>Modifier</string>
+      </property>
+      <addaction name="actionT_l_phone"/>
+      <addaction name="actionMail"/>
+      <addaction name="actionAdresse"/>
+     </widget>
+     <addaction name="actionAjouter"/>
+     <addaction name="menuSupprimer"/>
+     <addaction name="menuModifier"/>
+    </widget>
+    <widget class="QMenu" name="menuAffichage_Recherche">
+     <property name="title">
+      <string>Affichage/Recherche</string>
+     </property>
+     <addaction name="separator"/>
+     <addaction name="actionAffichageEtudiant"/>
+     <addaction name="actionRecherce_par_num_ro_d_inscription"/>
+     <addaction name="actionRecherche_par_section"/>
+     <addaction name="actionRecherche_par_section_et_niveau"/>
+     <addaction name="actionRecherche_par_niveau"/>
+    </widget>
+    <addaction name="menuMise_a_jour"/>
+    <addaction name="menuAffichage_Recherche"/>
+   </widget>
+   <widget class="QMenu" name="menuMatiere">
+    <property name="title">
+     <string>Matière</string>
+    </property>
+    <widget class="QMenu" name="menuMise_jour">
+     <property name="title">
+      <string>Mise à jour</string>
+     </property>
+     <widget class="QMenu" name="menuModifier_2">
+      <property name="title">
+       <string>Modifier</string>
+      </property>
+      <addaction name="actionNom"/>
+      <addaction name="actionCoefficient"/>
+     </widget>
+     <addaction name="actionAjout"/>
+     <addaction name="actionSupprimer_2"/>
+     <addaction name="menuModifier_2"/>
+    </widget>
+    <widget class="QMenu" name="menuAffichage_Recherche_2">
+     <property name="title">
+      <string>Affichage/Recherche</string>
+     </property>
+     <addaction name="actionAffichageMatiere"/>
+     <addaction name="actionRecherche_par_code"/>
+     <addaction name="actionRecherche_par_section_2"/>
+     <addaction name="actionRecherche_par_section_et_semestre"/>
+    </widget>
+    <addaction name="menuMise_jour"/>
+    <addaction name="menuAffichage_Recherche_2"/>
+   </widget>
+   <widget class="QMenu" name="menuNote">
+    <property name="title">
+     <string>Note</string>
+    </property>
+    <widget class="QMenu" name="menuMise_jour_2">
+     <property name="title">
+      <string>Mise à jour</string>
+     </property>
+     <addaction name="actionAjouterNote"/>
+     <addaction name="actionSupprimerNote"/>
+     <addaction name="actionModifierNote"/>
+    </widget>
+    <widget class="QMenu" name="menuAffichage_Recherche_3">
+     <property name="title">
+      <string>Affichage/Recherche</string>
+     </property>
+     <addaction name="actionAfficher_tous_les_notes"/>
+     <addaction name="actionRecherche_par_num_ro_d_inscription"/>
+     <addaction name="actionRecherche_par_section_et_niveau_2"/>
+     <addaction name="actionRecherche_par_num_ro_inscription_et_semestre"/>
+    </widget>
+    <addaction name="menuMise_jour_2"/>
+    <addaction name="menuAffichage_Recherche_3"/>
+   </widget>
+   <widget class="QMenu" name="menuCalcul_et_Affichage">
+    <property name="title">
+     <string>Calcul et Affichage</string>
+    </property>
+    <addaction name="actionBulletin_de_note_d_un_tudiant"/>
+    <addaction name="actionBulletin_de_note_d_un_tudiant_par_semestre"/>
+    <addaction name="actionEtudiants_admis_d_une_section_donn_e"/>
+    <addaction name="actionEtudiants_redoublants_d_une_section_donn_e"/>
+    <addaction name="actionEtudiants_admis_de_L_ISIMM"/>
+    <addaction name="actionEtudiants_redoublants_de_L_ISIMM"/>
+    <addaction name="actionEtudiants_redoublants_d_une_section_donn_e_2"/>
+    <addaction name="actionMoyennes_des_tudiants_d_une_section_donn_e"/>
+   </widget>
+   <addaction name="menufile"/>
+   <addaction name="menuEtudiant"/>
+   <addaction name="menuMatiere"/>
+   <addaction name="menuNote"/>
+   <addaction name="menuCalcul_et_Affichage"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionAffichageEtudiant">
+   <property name="text">
+    <string>Afficher tous les étudiants</string>
+   </property>
+  </action>
+  <action name="actionAjouter">
+   <property name="text">
+    <string>Ajouter</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+E</string>
+   </property>
+   <property name="shortcutContext">
+    <enum>Qt::ApplicationShortcut</enum>
+   </property>
+   <property name="visible">
+    <bool>true</bool>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::ApplicationSpecificRole</enum>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+   <property name="shortcutVisibleInContextMenu">
+    <bool>false</bool>
+   </property>
+   <property name="priority">
+    <enum>QAction::NormalPriority</enum>
+   </property>
+  </action>
+  <action name="actionSupprimer_un_etudiant">
+   <property name="text">
+    <string>Suppression d'un étudiant</string>
+   </property>
+  </action>
+  <action name="actionSupprimer_par_section">
+   <property name="text">
+    <string>Suppression des étudiants par section</string>
+   </property>
+  </action>
+  <action name="actionEtudiant">
+   <property name="text">
+    <string>Etudiant</string>
+   </property>
+  </action>
+  <action name="actionMatiere">
+   <property name="text">
+    <string>Matiere</string>
+   </property>
+  </action>
+  <action name="actionNote">
+   <property name="text">
+    <string>Note</string>
+   </property>
+  </action>
+  <action name="actionEtudiant_2">
+   <property name="text">
+    <string>Etudiant</string>
+   </property>
+  </action>
+  <action name="actionMatiere_2">
+   <property name="text">
+    <string>Matiere</string>
+   </property>
+  </action>
+  <action name="actionNote_2">
+   <property name="text">
+    <string>Note</string>
+   </property>
+  </action>
+  <action name="actionSuppression_des_tudiants_par_niveau">
+   <property name="text">
+    <string>Suppression des étudiants par niveau</string>
+   </property>
+  </action>
+  <action name="actionSuppression_des_tudiants_par_section_et_niveau">
+   <property name="text">
+    <string>Suppression des étudiants par section et niveau</string>
+   </property>
+  </action>
+  <action name="actionT_l_phone">
+   <property name="text">
+    <string>Téléphone</string>
+   </property>
+  </action>
+  <action name="actionMail">
+   <property name="text">
+    <string>Mail</string>
+   </property>
+  </action>
+  <action name="actionAdresse">
+   <property name="text">
+    <string>Adresse</string>
+   </property>
+  </action>
+  <action name="actionRecherce_par_num_ro_d_inscription">
+   <property name="text">
+    <string>Recherche par numéro d'inscription</string>
+   </property>
+  </action>
+  <action name="actionRecherche_par_section">
+   <property name="text">
+    <string>Recherche par section</string>
+   </property>
+  </action>
+  <action name="actionRecherche_par_section_et_niveau">
+   <property name="text">
+    <string>Recherche par section et niveau</string>
+   </property>
+  </action>
+  <action name="actionRecherche_par_niveau">
+   <property name="text">
+    <string>Recherche par niveau</string>
+   </property>
+  </action>
+  <action name="actionAjout">
+   <property name="text">
+    <string>Ajouter</string>
+   </property>
+  </action>
+  <action name="actionSupprimer_2">
+   <property name="text">
+    <string>Supprimer une matiere</string>
+   </property>
+  </action>
+  <action name="actionNom">
+   <property name="text">
+    <string>Nom</string>
+   </property>
+  </action>
+  <action name="actionCoefficient">
+   <property name="text">
+    <string>Coefficient</string>
+   </property>
+  </action>
+  <action name="actionAffichageMatiere">
+   <property name="text">
+    <string>Afficher tous les matières</string>
+   </property>
+  </action>
+  <action name="actionRecherche_par_code">
+   <property name="text">
+    <string>Recherche par code</string>
+   </property>
+  </action>
+  <action name="actionRecherche_par_section_2">
+   <property name="text">
+    <string>Recherche par section</string>
+   </property>
+  </action>
+  <action name="actionRecherche_par_section_et_semestre">
+   <property name="text">
+    <string>Recherche par section et semestre</string>
+   </property>
+  </action>
+  <action name="actionAjouterNote">
+   <property name="text">
+    <string>Ajouter</string>
+   </property>
+  </action>
+  <action name="actionSupprimerNote">
+   <property name="text">
+    <string>Supprimer</string>
+   </property>
+  </action>
+  <action name="actionModifierNote">
+   <property name="text">
+    <string>Modifier</string>
+   </property>
+  </action>
+  <action name="actionAfficher_tous_les_notes">
+   <property name="text">
+    <string>Afficher tous les notes</string>
+   </property>
+  </action>
+  <action name="actionRecherche_par_num_ro_d_inscription">
+   <property name="text">
+    <string>Recherche par numéro d'inscription</string>
+   </property>
+  </action>
+  <action name="actionRecherche_par_section_et_niveau_2">
+   <property name="text">
+    <string>Recherche par section et niveau</string>
+   </property>
+  </action>
+  <action name="actionRecherche_par_num_ro_inscription_et_semestre">
+   <property name="text">
+    <string>Recherche par numéro inscription et semestre</string>
+   </property>
+  </action>
+  <action name="actionBulletin_de_note_d_un_tudiant">
+   <property name="text">
+    <string>Bulletin de note d'un étudiant</string>
+   </property>
+  </action>
+  <action name="actionBulletin_de_note_d_un_tudiant_par_semestre">
+   <property name="text">
+    <string>Bulletin de note d'un étudiant par semestre</string>
+   </property>
+  </action>
+  <action name="actionEtudiants_admis_d_une_section_donn_e">
+   <property name="text">
+    <string>Etudiants admis d'une section donnée</string>
+   </property>
+  </action>
+  <action name="actionEtudiants_redoublants_d_une_section_donn_e">
+   <property name="text">
+    <string>Etudiants redoublants d'une section donnée</string>
+   </property>
+  </action>
+  <action name="actionEtudiants_admis_de_L_ISIMM">
+   <property name="text">
+    <string>Etudiants admis de L'ISIMM</string>
+   </property>
+  </action>
+  <action name="actionEtudiants_redoublants_de_L_ISIMM">
+   <property name="text">
+    <string>Etudiants redoublants de L'ISIMM</string>
+   </property>
+  </action>
+  <action name="actionEtudiants_redoublants_d_une_section_donn_e_2">
+   <property name="text">
+    <string>Etudiants redoublants d'une section donnée</string>
+   </property>
+  </action>
+  <action name="actionMoyennes_des_tudiants_d_une_section_donn_e">
+   <property name="text">
+    <string>Moyennes des étudiants d'une section donnée</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="icons/icons.qrc"/>
+ </resources>
+ <connections/>
+</ui>

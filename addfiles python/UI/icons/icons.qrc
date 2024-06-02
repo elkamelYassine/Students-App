@@ -1,0 +1,8 @@
+<RCC>
+  <qresource prefix="newPrefix">
+    <file>ISIMM_LOGO.png</file>
+    <file>183338.png</file>
+    <file>etudiant.png</file>
+    <file>livre.png</file>
+  </qresource>
+</RCC>
